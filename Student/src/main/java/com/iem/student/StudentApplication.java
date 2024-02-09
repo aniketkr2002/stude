@@ -17,17 +17,13 @@ public class StudentApplication  implements CommandLineRunner{
 	public static void main(String[] args) {
 		SpringApplication.run(StudentApplication.class, args);
 	}
-	
-
 	@Override
 	public void run(String... args) throws Exception {
 		Student s = new Student();
 		s.setName("anshu");
 		s.setEnrollment("9053");
 		s.setBranch("CSE");
-		
 		studentService.createStudent(s); 
-
 	}
 
 

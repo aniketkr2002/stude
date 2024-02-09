@@ -19,6 +19,7 @@ public class StudentController {
 	
 	@PostMapping(value="/create")
 	public Student createStudent(@RequestBody Student stu_input) {
+		
 		return  studentService.createStudent(stu_input);
 	}
 	@GetMapping(value="/all")

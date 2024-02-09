@@ -1,20 +1,22 @@
 package com.iem.student.model;
 import org.springframework.data.annotation.Id;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 
 
-@jakarta.persistence.Table(name = "student_table")
-@jakarta.persistence.Entity
+
+@Entity
 public class Student {
     @Id
-    @jakarta.persistence.GeneratedValue(strategy = jakarta.persistence.GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     
-    
+    //not null
+    //validation class call 
 	private String name;
-	
 	private String enrollment;
-	
 	private String branch;
 
 	public String getName() {
