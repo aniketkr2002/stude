@@ -1,5 +1,7 @@
 package com.iem.student;
 
+
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -24,7 +26,9 @@ public class StudentApplication  implements CommandLineRunner{
 		s.setEnrollment("9053");
 		s.setBranch("CSE");
 		
-		studentService.createStudent(s);
+		studentService.createStudent(s); 
+
 	}
+
 
 }

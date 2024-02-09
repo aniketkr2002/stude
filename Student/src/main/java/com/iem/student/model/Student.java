@@ -1,19 +1,13 @@
 package com.iem.student.model;
-
-
-
-import javax.persistence.Table;
 import org.springframework.data.annotation.Id;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 
 
-@Table(name = "student_table")
-@Entity
+
+@jakarta.persistence.Table(name = "student_table")
+@jakarta.persistence.Entity
 public class Student {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @jakarta.persistence.GeneratedValue(strategy = jakarta.persistence.GenerationType.AUTO)
     private Integer id;
     
     
